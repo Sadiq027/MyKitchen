@@ -1,0 +1,240 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar decoration */
+#navbar::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    align-items: center; 
+
+}
+#navbar ul{
+    font-size: 1.2rem;
+    display: flex; 
+}
+ #navbar ul li{
+     list-style: none;
+ }
+#navbar ul li a{
+    margin: 0px 20px;
+    display: block;
+    border-radius: 25px;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: white; 
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+ /* navbar logo & img  */
+#logo{
+    display: flex;
+}
+#logo img{
+    margin: 8px 13px;
+    width: 45px;
+    height: 45px;
+}
+/* home section */
+#home{
+    padding: 0px 200px;
+    height:  400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#home::before{
+    content: "";
+    background-image: url('../IMG/bk.jpg.jpg');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.8;
+}
+/* services */
+#services{
+    /* margin: 60px 0px 0px 0px; */
+    display: flex;
+}
+#services .box{
+    border: tomato 2px solid;
+    padding: 30px;
+    margin: 3px 8px;
+    border-radius: 25px;
+    background-color: rgb(248, 237, 234);
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+/* #services{}
+#services{} */
+#services .box img{
+    margin: auto;
+    display: block;
+    height: 160px;
+}
+section h1{
+    margin: 65px 0px 0px 0px;
+}
+/* Clients section */
+#client-section{
+ 
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: px; */
+    
+}
+.client-item {
+    display: flex;
+    /* width: 100%; */
+    /* height: 70%;    */
+}
+#clients::before{
+    content: "";
+    background-image: url('../IMG/bk2.jpg.jpg');
+    position: absolute;
+    /* top: px; */
+    left: 0;
+    width: 100%;
+    height: 370px;
+    z-index: -1;
+    opacity: 0.35;
+}
+.client-item img{
+    /* display: block; */
+    /* flex-direction: row; */
+    margin:35px;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+    /* width: 150px; */
+    height: 150px;
+   
+}
+/* Contact section  */
+#contact{
+    position: relative;
+    /* height: 300px; */
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    background-image: url('../IMG/bk3.jpg.jpg')  ;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+    /* flex-direction: row; */
+
+}
+#contact-box input,
+#contact-box textarea{
+    padding: 0.4rem ;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: 5px 0px;
+}
+#contact-box form{
+    width: 40%;
+    /* border-radius: 25px; */
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+
+}
+footer{
+    display: block;
+    /* width: 100%; */
+    /* height: 30px ; */
+    padding: 5px 10px;
+}
+
+/* utility class */
+#home h1{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    padding: 5px;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.2rem;
+    /* color: white; */
+    /* padding: 10px; */
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    /* color: white; */
+    /* padding: 10px; */
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 10px 10px ;
+    margin: 20px;
+    font-size: 0.8rem;
+    border: 2px white solid;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #ff4141b8;
+}
+.btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    /* border-radius : 25px;  */
+    /* border: 2px rgb(255, 253, 253) solid; */
+
+
+}
+.color{
+    color: aqua;
+}
+.border{
+    border: 2px  solid wheat ;
+}
